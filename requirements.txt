@@ -129,7 +129,7 @@ traitlets==5.14.1
 typing_extensions==4.11.0
 tzdata==2023.3
 uritemplate==4.1.1
-urllib==32.1.0
+urllib3==2.1.0
 watchdog==2.1.6
 wcwidth==0.2.13
 webencodings==0.5.1
