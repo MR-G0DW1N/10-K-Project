@@ -124,7 +124,7 @@ if option == 'y':
 new_file = st.file_uploader("upload file")
 
 #api_key =  os.getenv("api_key")
-api_key = st.secrets("api_key")
+api_key = st.secrets["api_key"]
 
 if st.button("Analyse"):
 
