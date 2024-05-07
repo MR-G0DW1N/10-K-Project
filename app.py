@@ -11,7 +11,7 @@ import google.generativeai as genai
 from IPython.display import display
 from IPython.display import Markdown
 
-from dotenv import load_dotenv, dotenv_values 
+#from dotenv import load_dotenv, dotenv_values 
 
 
 def to_markdown(text):
@@ -99,7 +99,7 @@ def findtable(soup1):
 
                 return prompt_data
 
-load_dotenv()
+#load_dotenv()
 
 st.title("10-K form downloader and Analyser")
 
@@ -123,8 +123,8 @@ if option == 'y':
     
 new_file = st.file_uploader("upload file")
 
-api_key =  os.getenv("api_key")
-
+#api_key =  os.getenv("api_key")
+api_key = st.secrets("api_key")
 
 if st.button("Analyse"):
 
